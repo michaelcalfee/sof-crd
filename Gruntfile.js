@@ -60,8 +60,7 @@ module.exports = function(grunt) {
         tasks: ['sass','concat']  
       },
       livereload: {
-        port: 35728,
-        options: { livereload: true },
+        options: { livereload: 35728 },
         files: ['static/dist/css/**/*.css','static/dist/js/**/*.js']
       }
     }

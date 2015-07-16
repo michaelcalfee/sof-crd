@@ -1,4 +1,9 @@
 //main.scss
 
-@import "base";
+@import "partials/mixins";
+@import "partials/reset";
+@import "partials/base";
+@import "partials/icons";
+@import "partials/header";
 @import "partials/layout";
+@import "partials/footer";

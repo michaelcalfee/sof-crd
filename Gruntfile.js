@@ -38,7 +38,7 @@ module.exports = function(grunt) {
         files: [{
           expand: true,
           cwd: 'static/src/scss',
-          src: ['**/*.scss'],
+          src: ['*.scss'],
           dest: 'static/src/css',
           ext: '.css'
         }]
@@ -60,8 +60,8 @@ module.exports = function(grunt) {
         tasks: ['sass','concat']  
       },
       livereload: {
-        options: { livereload: 35728 },
-        files: ['static/dist/css/**/*.css','static/dist/js/**/*.js']
+        options: { livereload: true },
+        files: ['static/src/css/**/*.css','static/dist/js/**/*.js', 'static/index.html']
       }
     }
   });

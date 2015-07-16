@@ -1,0 +1,45 @@
+//partials/_base.scss
+
+//colors
+$color-white: #FFFFFF;
+$color-grey: #6F6F6F;
+$color-light-grey: #B6B6B6;
+$color-extra-light-grey: #F0F4F7;
+$color-blue: #07428f;
+$color-light-blue: #9caebb;
+$color-green: #258751;
+
+body {
+	background: $color-white;
+	font-family: Arial, sans-serif;
+}
+
+a {
+	text-decoration: none;
+	color: $color-blue;
+}
+
+p {
+	margin-bottom: 10px;
+}
+
+h1, .h1, h2, .h2 {
+	color: $color-blue;
+}
+
+h1, .h1 {
+	font-size: 40px;
+	font-weight: bold; 
+	margin-bottom: 10px;
+}
+
+h2, .h2 {
+	font-size: 26px;
+	margin-bottom: 10px;
+}
+
+sup {
+	font-size: 0.4em;
+	position: relative;
+	top: -1em;
+}

@@ -1,0 +1,48 @@
+//partials/_footer.scss
+
+footer {
+	overflow: hidden;
+	padding: 50px 0 30px;
+	background: $color-extra-light-grey;
+	nav {
+		float: left;
+		width: 320px;
+		&.products {
+			width: 640px;
+			.category-list {
+				float: left;
+				margin-right: 60px;
+				&:last-child {
+					margin-right: 0;
+				}
+			}
+		}
+		ul {
+			margin-bottom: 20px;
+		}
+		li {
+			font-size: 14px;
+			line-height: 20px;
+		}
+	}
+	a {
+		color: $color-grey;
+	}
+	h4, h5 {
+		margin-bottom: 10px;
+		a {
+			font-weight: bold;
+			color: $color-blue;
+		}
+	}
+	h4 {
+		a {
+			font-size: 20px;
+		}
+	}
+	h5 {
+		a {
+			font-size: 16px;
+		}
+	}
+}

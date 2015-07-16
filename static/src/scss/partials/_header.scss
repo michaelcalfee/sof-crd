@@ -1,0 +1,56 @@
+//partials/_header.scss
+header {
+	margin-bottom: 30px;
+	.container {
+		@include horizontal-shadow();
+		.nav-container {
+			background: $color-white;
+			overflow: hidden;
+		}
+	}
+	h1 {
+		float: left;
+		height: 24px;
+		width: 98px;
+		padding: 18px 0;
+		margin: 0;
+		background: url(../img/acuvue-logo.png) center center no-repeat;
+		background-size: contain;
+		text-indent: -100%;
+	}
+	nav {
+		li {
+			display: inline-block;
+			margin-left: 18px;
+			font-size: 14px;
+			font-weight: bold;
+			a {
+				line-height: 60px;
+			}
+		}
+		&.primary {
+			float: left;
+			border-left: 1px solid $color-extra-light-grey;
+			margin-left: 12px;
+			li:first-child {
+				margin-left: 12px;
+			}
+		} 
+		&.secondary {
+			float: right;
+			li {
+				font-size: 12px;
+				line-height: 18px;
+			}
+			a {
+				color: $color-light-blue;
+			}
+			.icon {
+				font-size: 18px;
+				padding-right: 4px;
+				position: relative;
+				top: 2px;
+			}
+		}
+	}
+}
